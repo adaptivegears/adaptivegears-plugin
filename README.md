@@ -13,9 +13,9 @@ Claude Code plugin for canonical patterns in AWS, infrastructure, Python, and da
 
 | Command | Description |
 |---------|-------------|
-| `/adaptivegears-enable` | Activate companion mode - proactive pattern matching |
-| `/adaptivegears-maintainer` | Activate maintainer mode - companion + gap detection |
-| `/adaptivegears-disable` | Return to passive mode (default) |
+| `/adaptivegears:enable` | Activate companion mode - proactive pattern matching |
+| `/adaptivegears:maintainer` | Activate maintainer mode - companion + gap detection |
+| `/adaptivegears:disable` | Return to passive mode (default) |
 
 ## Modes
 
@@ -65,9 +65,9 @@ Adaptive Gears is a knowledge base containing canonical patterns and solutions f
 
 | Command | Mode | Behavior |
 |---------|------|----------|
-| `/adaptivegears-enable` | Companion | Proactively use KB to shape code |
-| `/adaptivegears-maintainer` | Maintainer | Companion + identify documentation gaps |
-| `/adaptivegears-disable` | Passive | Only use KB when explicitly asked |
+| `/adaptivegears:enable` | Companion | Proactively use KB to shape code |
+| `/adaptivegears:maintainer` | Maintainer | Companion + identify documentation gaps |
+| `/adaptivegears:disable` | Passive | Only use KB when explicitly asked |
 
 ### Companion Mode Behavior
 
