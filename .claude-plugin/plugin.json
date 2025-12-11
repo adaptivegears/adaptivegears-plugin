@@ -1,0 +1,10 @@
+{
+  "name": "adaptivegears",
+  "description": "Canonical patterns for AWS, infrastructure, Python, and data engineering",
+  "version": "1.0.0",
+  "author": {
+    "name": "Adaptive Gears",
+    "url": "https://adaptivegears.studio"
+  },
+  "repository": "https://github.com/adaptivegears/adaptivegears-plugin"
+}

@@ -1,0 +1,14 @@
+{
+  "name": "adaptivegears",
+  "owner": {
+    "name": "Adaptive Gears",
+    "url": "https://adaptivegears.studio"
+  },
+  "plugins": [
+    {
+      "name": "adaptivegears",
+      "source": ".",
+      "description": "Canonical patterns for AWS, infrastructure, Python, and data engineering"
+    }
+  ]
+}
