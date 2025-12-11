@@ -7,7 +7,7 @@
   "plugins": [
     {
       "name": "adaptivegears",
-      "source": ".",
+      "source": "./",
       "description": "Canonical patterns for AWS, infrastructure, Python, and data engineering"
     }
   ]

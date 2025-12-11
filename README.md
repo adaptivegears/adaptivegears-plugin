@@ -47,3 +47,48 @@ Tools available:
 |------|-------------|
 | `search(query, limit)` | Semantic search across KB |
 | `read(category, doc, anchor)` | Read markdown content |
+
+## CLAUDE.md (Recommended)
+
+Add to your repo's `CLAUDE.md` to reinforce plugin behavior:
+
+```markdown
+## Adaptive Gears
+
+Adaptive Gears is a knowledge base containing canonical patterns and solutions for:
+- AWS services (S3, Lambda, DynamoDB, IAM, CloudFormation, etc.)
+- Infrastructure (Terraform, Docker, Kubernetes, CI/CD pipelines)
+- Python data pipelines, tooling, and automation
+- CLI applications and developer tooling
+
+### Mode Commands
+
+| Command | Mode | Behavior |
+|---------|------|----------|
+| `/adaptivegears-enable` | Companion | Proactively use KB to shape code |
+| `/adaptivegears-maintainer` | Maintainer | Companion + identify documentation gaps |
+| `/adaptivegears-disable` | Passive | Only use KB when explicitly asked |
+
+### Companion Mode Behavior
+
+When enabled, before implementing solutions in the domains above:
+1. Search the KB using `mcp__adaptivegears__search` for existing patterns
+2. If a pattern exists, use `mcp__adaptivegears__read` to get full content
+3. Follow the pattern as the canonical implementation approach
+4. Align code style, structure, and conventions with KB solutions
+
+The KB represents the preferred way to implement. Code should conform to these
+patterns, not just be inspired by them.
+
+### Maintainer Mode Behavior
+
+Everything from companion mode, plus:
+1. Track solutions implemented during the session
+2. After completing work, identify patterns not covered in the KB
+3. Suggest new documentation: topic, category (kb/reference/blog), and outline
+4. Help grow and curate the knowledge base
+
+### Default State
+
+Passive mode. Await explicit activation via command.
+```
